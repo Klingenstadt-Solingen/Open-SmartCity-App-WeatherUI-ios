@@ -1,0 +1,885 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0873078227C3DE7C00915F24 /* OSCAWeatherUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 0873078127C3DE7C00915F24 /* OSCAWeatherUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0873079F27C3E05D00915F24 /* OSCAWeatherUIDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0873078827C3E05D00915F24 /* OSCAWeatherUIDIContainer.swift */; };
+		087307A027C3E05D00915F24 /* OSCAWeatherUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0873078927C3E05D00915F24 /* OSCAWeatherUI.swift */; };
+		087307A127C3E05D00915F24 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0873078B27C3E05D00915F24 /* Localizable.strings */; };
+		087307A227C3E05D00915F24 /* NSNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0873078F27C3E05D00915F24 /* NSNumber.swift */; };
+		087307A327C3E05D00915F24 /* OSCAWeatherStationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0873079327C3E05D00915F24 /* OSCAWeatherStationViewModel.swift */; };
+		087307A427C3E05D00915F24 /* OSCAWeatherStationCollectionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0873079427C3E05D00915F24 /* OSCAWeatherStationCollectionCellViewModel.swift */; };
+		087307A527C3E05D00915F24 /* OSCAWeatherStationCollectionReusableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0873079527C3E05D00915F24 /* OSCAWeatherStationCollectionReusableViewModel.swift */; };
+		087307A627C3E05D00915F24 /* OSCAWeatherStationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0873079727C3E05D00915F24 /* OSCAWeatherStationCollectionViewCell.swift */; };
+		087307A727C3E05D00915F24 /* OSCAWeatherStationCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0873079827C3E05D00915F24 /* OSCAWeatherStationCollectionReusableView.swift */; };
+		087307A827C3E05D00915F24 /* OSCAWeatherStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0873079927C3E05D00915F24 /* OSCAWeatherStationViewController.swift */; };
+		087307A927C3E05D00915F24 /* OSCAWeatherStationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0873079B27C3E05D00915F24 /* OSCAWeatherStationViewController.storyboard */; };
+		087307AB27C3E05D00915F24 /* OSCAWeatherStationFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0873079E27C3E05D00915F24 /* OSCAWeatherStationFlowCoordinator.swift */; };
+		087307B927C3E12900915F24 /* OSCAWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 087307B827C3E12900915F24 /* OSCAWeather.framework */; };
+		087307BA27C3E12900915F24 /* OSCAWeather.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 087307B827C3E12900915F24 /* OSCAWeather.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		087307BD27C3E12E00915F24 /* OSCAEssentials.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 087307BC27C3E12E00915F24 /* OSCAEssentials.framework */; };
+		087307BE27C3E12E00915F24 /* OSCAEssentials.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 087307BC27C3E12E00915F24 /* OSCAEssentials.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		087307C027C3E13800915F24 /* OSCANetworkService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 087307BF27C3E13800915F24 /* OSCANetworkService.framework */; };
+		087307C127C3E13800915F24 /* OSCANetworkService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 087307BF27C3E13800915F24 /* OSCANetworkService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		087307FF27C3E69200915F24 /* OSCAWeatherUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0873077E27C3DE7C00915F24 /* OSCAWeatherUI.framework */; platformFilter = ios; };
+		0873080527C3E6C200915F24 /* OSCAWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087307AD27C3E07500915F24 /* OSCAWeatherUITests.swift */; };
+		087C75EF2837A71A0051EF22 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 087C75EE2837A71A0051EF22 /* Media.xcassets */; };
+		089A662D2805B431005E4FB8 /* OSCAWeatherStationSelectionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 089A662C2805B431005E4FB8 /* OSCAWeatherStationSelectionViewController.storyboard */; };
+		089A66302805B4B0005E4FB8 /* OSCAWeatherStationSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089A662E2805B4B0005E4FB8 /* OSCAWeatherStationSelectionTableViewCell.swift */; };
+		089A66312805B4B0005E4FB8 /* OSCAWeatherStationSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089A662F2805B4B0005E4FB8 /* OSCAWeatherStationSelectionViewController.swift */; };
+		089A66332805B4C3005E4FB8 /* OSCAWeatherStationSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089A66322805B4C3005E4FB8 /* OSCAWeatherStationSelectionViewModel.swift */; };
+		1123F0152924C6FD003AFF42 /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = 1123F0142924C6FD003AFF42 /* SwiftDate */; };
+		1139F00928C9D8F30050FAD4 /* WeatherDI+DeeplinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1139F00828C9D8F30050FAD4 /* WeatherDI+DeeplinkHandler.swift */; };
+		1139F00B28C9D9060050FAD4 /* WeatherStationFlow+OSCADeeplinkHandeble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1139F00A28C9D9060050FAD4 /* WeatherStationFlow+OSCADeeplinkHandeble.swift */; };
+		11A5FD61287C3C040066ECFE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 11A5FD5F287C3C040066ECFE /* Localizable.strings */; };
+		11FC17182875E7800056F002 /* OSCATestCaseExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FC17172875E7800056F002 /* OSCATestCaseExtension.framework */; };
+		F77A03CF2A0BC082007FFEFA /* OSCAWeatherStationWidgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77A03CE2A0BC082007FFEFA /* OSCAWeatherStationWidgetViewModel.swift */; };
+		F77A03D12A0BC18C007FFEFA /* OSCAWeatherStationWidgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77A03D02A0BC18C007FFEFA /* OSCAWeatherStationWidgetViewController.swift */; };
+		F77A03D32A0BC1AD007FFEFA /* OSCAWeatherStationWidgetViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F77A03D22A0BC1AD007FFEFA /* OSCAWeatherStationWidgetViewController.storyboard */; };
+		F77A03D62A0BC2A5007FFEFA /* OSCAWeatherStationWidgetClassicCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77A03D42A0BC2A5007FFEFA /* OSCAWeatherStationWidgetClassicCellViewModel.swift */; };
+		F77A03D72A0BC2A5007FFEFA /* OSCAWeatherStationWidgetExtendedCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77A03D52A0BC2A5007FFEFA /* OSCAWeatherStationWidgetExtendedCellViewModel.swift */; };
+		F77A03DA2A0BC641007FFEFA /* OSCAWeatherStationWidgetExtendedCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77A03D82A0BC640007FFEFA /* OSCAWeatherStationWidgetExtendedCellView.swift */; };
+		F77A03DB2A0BC641007FFEFA /* OSCAWeatherStationWidgetClassicCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77A03D92A0BC640007FFEFA /* OSCAWeatherStationWidgetClassicCellView.swift */; };
+		F77A03DE2A0BC64C007FFEFA /* OSCAWeatherStationWidgetClassicCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F77A03DC2A0BC64C007FFEFA /* OSCAWeatherStationWidgetClassicCellView.xib */; };
+		F77A03DF2A0BC64C007FFEFA /* OSCAWeatherStationWidgetExtendedCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F77A03DD2A0BC64C007FFEFA /* OSCAWeatherStationWidgetExtendedCellView.xib */; };
+		F78E8D192A0BDC1E00A3E1DC /* OSCAWeatherWidgetFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78E8D182A0BDC1E00A3E1DC /* OSCAWeatherWidgetFlowCoordinator.swift */; };
+		F796BA9528F0663200AD6138 /* OSCAWeatherStationSelectionFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796BA9428F0663200AD6138 /* OSCAWeatherStationSelectionFlowCoordinator.swift */; };
+		F7998FF728880DAF0063D547 /* API_Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7998FF528880DAF0063D547 /* API_Release.plist */; };
+		F7998FF828880DAF0063D547 /* API_Develop.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7998FF628880DAF0063D547 /* API_Develop.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0873080027C3E69200915F24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0873077527C3DE7C00915F24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0873077D27C3DE7C00915F24;
+			remoteInfo = OSCAWeatherUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		087307BB27C3E12900915F24 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				087307BA27C3E12900915F24 /* OSCAWeather.framework in Embed Frameworks */,
+				087307BE27C3E12E00915F24 /* OSCAEssentials.framework in Embed Frameworks */,
+				087307C127C3E13800915F24 /* OSCANetworkService.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0821A4D327C691790074C774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0821A4D427C691890074C774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0873077E27C3DE7C00915F24 /* OSCAWeatherUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OSCAWeatherUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0873078127C3DE7C00915F24 /* OSCAWeatherUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSCAWeatherUI.h; sourceTree = "<group>"; };
+		0873078827C3E05D00915F24 /* OSCAWeatherUIDIContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAWeatherUIDIContainer.swift; sourceTree = "<group>"; };
+		0873078927C3E05D00915F24 /* OSCAWeatherUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAWeatherUI.swift; sourceTree = "<group>"; };
+		0873078C27C3E05D00915F24 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0873078D27C3E05D00915F24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0873078F27C3E05D00915F24 /* NSNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSNumber.swift; sourceTree = "<group>"; };
+		0873079327C3E05D00915F24 /* OSCAWeatherStationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAWeatherStationViewModel.swift; sourceTree = "<group>"; };
+		0873079427C3E05D00915F24 /* OSCAWeatherStationCollectionCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAWeatherStationCollectionCellViewModel.swift; sourceTree = "<group>"; };
+		0873079527C3E05D00915F24 /* OSCAWeatherStationCollectionReusableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAWeatherStationCollectionReusableViewModel.swift; sourceTree = "<group>"; };
+		0873079727C3E05D00915F24 /* OSCAWeatherStationCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAWeatherStationCollectionViewCell.swift; sourceTree = "<group>"; };
+		0873079827C3E05D00915F24 /* OSCAWeatherStationCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAWeatherStationCollectionReusableView.swift; sourceTree = "<group>"; };
+		0873079927C3E05D00915F24 /* OSCAWeatherStationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAWeatherStationViewController.swift; sourceTree = "<group>"; };
+		0873079B27C3E05D00915F24 /* OSCAWeatherStationViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OSCAWeatherStationViewController.storyboard; sourceTree = "<group>"; };
+		0873079E27C3E05D00915F24 /* OSCAWeatherStationFlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAWeatherStationFlowCoordinator.swift; sourceTree = "<group>"; };
+		087307AD27C3E07500915F24 /* OSCAWeatherUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAWeatherUITests.swift; sourceTree = "<group>"; };
+		087307B827C3E12900915F24 /* OSCAWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCAWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		087307BC27C3E12E00915F24 /* OSCAEssentials.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCAEssentials.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		087307BF27C3E13800915F24 /* OSCANetworkService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCANetworkService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		087307FB27C3E69200915F24 /* OSCAWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSCAWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		087C75EE2837A71A0051EF22 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		089A662C2805B431005E4FB8 /* OSCAWeatherStationSelectionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OSCAWeatherStationSelectionViewController.storyboard; sourceTree = "<group>"; };
+		089A662E2805B4B0005E4FB8 /* OSCAWeatherStationSelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAWeatherStationSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		089A662F2805B4B0005E4FB8 /* OSCAWeatherStationSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAWeatherStationSelectionViewController.swift; sourceTree = "<group>"; };
+		089A66322805B4C3005E4FB8 /* OSCAWeatherStationSelectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAWeatherStationSelectionViewModel.swift; sourceTree = "<group>"; };
+		1139F00828C9D8F30050FAD4 /* WeatherDI+DeeplinkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherDI+DeeplinkHandler.swift"; sourceTree = "<group>"; };
+		1139F00A28C9D9060050FAD4 /* WeatherStationFlow+OSCADeeplinkHandeble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherStationFlow+OSCADeeplinkHandeble.swift"; sourceTree = "<group>"; };
+		118DC3BA286199F600365384 /* libOSCATestCaseExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libOSCATestCaseExtension.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		11A5FD60287C3C040066ECFE /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		11D0E0BD287D44A40094C026 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Production.xcconfig; path = ../../../../../SupportingFiles/Production.xcconfig; sourceTree = "<group>"; };
+		11D0E0BE287D44A40094C026 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Development.xcconfig; path = ../../../../../SupportingFiles/Development.xcconfig; sourceTree = "<group>"; };
+		11FC17172875E7800056F002 /* OSCATestCaseExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = OSCATestCaseExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F77A03CE2A0BC082007FFEFA /* OSCAWeatherStationWidgetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSCAWeatherStationWidgetViewModel.swift; sourceTree = "<group>"; };
+		F77A03D02A0BC18C007FFEFA /* OSCAWeatherStationWidgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSCAWeatherStationWidgetViewController.swift; sourceTree = "<group>"; };
+		F77A03D22A0BC1AD007FFEFA /* OSCAWeatherStationWidgetViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OSCAWeatherStationWidgetViewController.storyboard; sourceTree = "<group>"; };
+		F77A03D42A0BC2A5007FFEFA /* OSCAWeatherStationWidgetClassicCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAWeatherStationWidgetClassicCellViewModel.swift; sourceTree = "<group>"; };
+		F77A03D52A0BC2A5007FFEFA /* OSCAWeatherStationWidgetExtendedCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAWeatherStationWidgetExtendedCellViewModel.swift; sourceTree = "<group>"; };
+		F77A03D82A0BC640007FFEFA /* OSCAWeatherStationWidgetExtendedCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAWeatherStationWidgetExtendedCellView.swift; sourceTree = "<group>"; };
+		F77A03D92A0BC640007FFEFA /* OSCAWeatherStationWidgetClassicCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCAWeatherStationWidgetClassicCellView.swift; sourceTree = "<group>"; };
+		F77A03DC2A0BC64C007FFEFA /* OSCAWeatherStationWidgetClassicCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OSCAWeatherStationWidgetClassicCellView.xib; sourceTree = "<group>"; };
+		F77A03DD2A0BC64C007FFEFA /* OSCAWeatherStationWidgetExtendedCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OSCAWeatherStationWidgetExtendedCellView.xib; sourceTree = "<group>"; };
+		F78E8D182A0BDC1E00A3E1DC /* OSCAWeatherWidgetFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSCAWeatherWidgetFlowCoordinator.swift; sourceTree = "<group>"; };
+		F796BA9428F0663200AD6138 /* OSCAWeatherStationSelectionFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSCAWeatherStationSelectionFlowCoordinator.swift; sourceTree = "<group>"; };
+		F7998FF528880DAF0063D547 /* API_Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = API_Release.plist; path = ../../../../../SupportingFiles/API_Release.plist; sourceTree = "<group>"; };
+		F7998FF628880DAF0063D547 /* API_Develop.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = API_Develop.plist; path = ../../../../../SupportingFiles/API_Develop.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0873077B27C3DE7C00915F24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1123F0152924C6FD003AFF42 /* SwiftDate in Frameworks */,
+				087307B927C3E12900915F24 /* OSCAWeather.framework in Frameworks */,
+				087307BD27C3E12E00915F24 /* OSCAEssentials.framework in Frameworks */,
+				087307C027C3E13800915F24 /* OSCANetworkService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		087307F827C3E69200915F24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11FC17182875E7800056F002 /* OSCATestCaseExtension.framework in Frameworks */,
+				087307FF27C3E69200915F24 /* OSCAWeatherUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0873077427C3DE7C00915F24 = {
+			isa = PBXGroup;
+			children = (
+				118119EB285A0DC000253965 /* scripts */,
+				0873078027C3DE7C00915F24 /* OSCAWeatherUI */,
+				087307AC27C3E07500915F24 /* OSCAWeatherUITests */,
+				0873077F27C3DE7C00915F24 /* Products */,
+				087307B727C3E12900915F24 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0873077F27C3DE7C00915F24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0873077E27C3DE7C00915F24 /* OSCAWeatherUI.framework */,
+				087307FB27C3E69200915F24 /* OSCAWeatherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0873078027C3DE7C00915F24 /* OSCAWeatherUI */ = {
+			isa = PBXGroup;
+			children = (
+				1139EFFA28C9CABE0050FAD4 /* Deeplink */,
+				0873078E27C3E05D00915F24 /* Extensions */,
+				0873079027C3E05D00915F24 /* WeatherStationScene */,
+				0873078A27C3E05D00915F24 /* Resources */,
+				11D0E08E287D41860094C026 /* SupportingFiles */,
+				0873078827C3E05D00915F24 /* OSCAWeatherUIDIContainer.swift */,
+				0873078927C3E05D00915F24 /* OSCAWeatherUI.swift */,
+				0873078127C3DE7C00915F24 /* OSCAWeatherUI.h */,
+				0821A4D327C691790074C774 /* Info.plist */,
+			);
+			path = OSCAWeatherUI;
+			sourceTree = "<group>";
+		};
+		0873078A27C3E05D00915F24 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0873078B27C3E05D00915F24 /* Localizable.strings */,
+				087C75EE2837A71A0051EF22 /* Media.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0873078E27C3E05D00915F24 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0873078F27C3E05D00915F24 /* NSNumber.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0873079027C3E05D00915F24 /* WeatherStationScene */ = {
+			isa = PBXGroup;
+			children = (
+				0873079127C3E05D00915F24 /* WeatherStation */,
+				F77A03CA2A0BC048007FFEFA /* WeatherStationWidget */,
+				089A66262805ADE1005E4FB8 /* WeatherStationSelection */,
+				0873079D27C3E05D00915F24 /* Flow */,
+			);
+			path = WeatherStationScene;
+			sourceTree = "<group>";
+		};
+		0873079127C3E05D00915F24 /* WeatherStation */ = {
+			isa = PBXGroup;
+			children = (
+				0873079227C3E05D00915F24 /* ViewModel */,
+				0873079627C3E05D00915F24 /* Controller */,
+				0873079A27C3E05D00915F24 /* View */,
+			);
+			path = WeatherStation;
+			sourceTree = "<group>";
+		};
+		0873079227C3E05D00915F24 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0873079327C3E05D00915F24 /* OSCAWeatherStationViewModel.swift */,
+				0873079527C3E05D00915F24 /* OSCAWeatherStationCollectionReusableViewModel.swift */,
+				0873079427C3E05D00915F24 /* OSCAWeatherStationCollectionCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0873079627C3E05D00915F24 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0873079927C3E05D00915F24 /* OSCAWeatherStationViewController.swift */,
+				0873079827C3E05D00915F24 /* OSCAWeatherStationCollectionReusableView.swift */,
+				0873079727C3E05D00915F24 /* OSCAWeatherStationCollectionViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0873079A27C3E05D00915F24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0873079B27C3E05D00915F24 /* OSCAWeatherStationViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0873079D27C3E05D00915F24 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				0873079E27C3E05D00915F24 /* OSCAWeatherStationFlowCoordinator.swift */,
+				F796BA9428F0663200AD6138 /* OSCAWeatherStationSelectionFlowCoordinator.swift */,
+				F78E8D182A0BDC1E00A3E1DC /* OSCAWeatherWidgetFlowCoordinator.swift */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		087307AC27C3E07500915F24 /* OSCAWeatherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0821A4D427C691890074C774 /* Info.plist */,
+				11A5FD5E287C3C040066ECFE /* Resources */,
+				087307AD27C3E07500915F24 /* OSCAWeatherUITests.swift */,
+			);
+			path = OSCAWeatherUITests;
+			sourceTree = "<group>";
+		};
+		087307B727C3E12900915F24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11FC17172875E7800056F002 /* OSCATestCaseExtension.framework */,
+				118DC3BA286199F600365384 /* libOSCATestCaseExtension.a */,
+				087307BF27C3E13800915F24 /* OSCANetworkService.framework */,
+				087307BC27C3E12E00915F24 /* OSCAEssentials.framework */,
+				087307B827C3E12900915F24 /* OSCAWeather.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		089A66262805ADE1005E4FB8 /* WeatherStationSelection */ = {
+			isa = PBXGroup;
+			children = (
+				089A66292805ADFA005E4FB8 /* ViewModel */,
+				089A66282805ADF4005E4FB8 /* Controller */,
+				089A66272805ADEF005E4FB8 /* View */,
+			);
+			path = WeatherStationSelection;
+			sourceTree = "<group>";
+		};
+		089A66272805ADEF005E4FB8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				089A662C2805B431005E4FB8 /* OSCAWeatherStationSelectionViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		089A66282805ADF4005E4FB8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				089A662F2805B4B0005E4FB8 /* OSCAWeatherStationSelectionViewController.swift */,
+				089A662E2805B4B0005E4FB8 /* OSCAWeatherStationSelectionTableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		089A66292805ADFA005E4FB8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				089A66322805B4C3005E4FB8 /* OSCAWeatherStationSelectionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1139EFFA28C9CABE0050FAD4 /* Deeplink */ = {
+			isa = PBXGroup;
+			children = (
+				1139F00828C9D8F30050FAD4 /* WeatherDI+DeeplinkHandler.swift */,
+				1139F00A28C9D9060050FAD4 /* WeatherStationFlow+OSCADeeplinkHandeble.swift */,
+			);
+			path = Deeplink;
+			sourceTree = "<group>";
+		};
+		118119EB285A0DC000253965 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = scripts;
+			sourceTree = "<group>";
+		};
+		11A5FD5E287C3C040066ECFE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F7998FF628880DAF0063D547 /* API_Develop.plist */,
+				F7998FF528880DAF0063D547 /* API_Release.plist */,
+				11A5FD5F287C3C040066ECFE /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		11D0E08E287D41860094C026 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				11D0E0BE287D44A40094C026 /* Development.xcconfig */,
+				11D0E0BD287D44A40094C026 /* Production.xcconfig */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F77A03CA2A0BC048007FFEFA /* WeatherStationWidget */ = {
+			isa = PBXGroup;
+			children = (
+				F77A03CD2A0BC062007FFEFA /* ViewModel */,
+				F77A03CC2A0BC05B007FFEFA /* Controller */,
+				F77A03CB2A0BC055007FFEFA /* View */,
+			);
+			path = WeatherStationWidget;
+			sourceTree = "<group>";
+		};
+		F77A03CB2A0BC055007FFEFA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F77A03D22A0BC1AD007FFEFA /* OSCAWeatherStationWidgetViewController.storyboard */,
+				F77A03DC2A0BC64C007FFEFA /* OSCAWeatherStationWidgetClassicCellView.xib */,
+				F77A03DD2A0BC64C007FFEFA /* OSCAWeatherStationWidgetExtendedCellView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F77A03CC2A0BC05B007FFEFA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F77A03D02A0BC18C007FFEFA /* OSCAWeatherStationWidgetViewController.swift */,
+				F77A03D92A0BC640007FFEFA /* OSCAWeatherStationWidgetClassicCellView.swift */,
+				F77A03D82A0BC640007FFEFA /* OSCAWeatherStationWidgetExtendedCellView.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F77A03CD2A0BC062007FFEFA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F77A03CE2A0BC082007FFEFA /* OSCAWeatherStationWidgetViewModel.swift */,
+				F77A03D42A0BC2A5007FFEFA /* OSCAWeatherStationWidgetClassicCellViewModel.swift */,
+				F77A03D52A0BC2A5007FFEFA /* OSCAWeatherStationWidgetExtendedCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0873077927C3DE7C00915F24 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0873078227C3DE7C00915F24 /* OSCAWeatherUI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0873077D27C3DE7C00915F24 /* OSCAWeatherUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0873078527C3DE7C00915F24 /* Build configuration list for PBXNativeTarget "OSCAWeatherUI" */;
+			buildPhases = (
+				0873077927C3DE7C00915F24 /* Headers */,
+				0873077A27C3DE7C00915F24 /* Sources */,
+				0873077B27C3DE7C00915F24 /* Frameworks */,
+				0873077C27C3DE7C00915F24 /* Resources */,
+				087307BB27C3E12900915F24 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OSCAWeatherUI;
+			packageProductDependencies = (
+				1123F0142924C6FD003AFF42 /* SwiftDate */,
+			);
+			productName = OSCAWeatherUI;
+			productReference = 0873077E27C3DE7C00915F24 /* OSCAWeatherUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		087307FA27C3E69200915F24 /* OSCAWeatherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0873080227C3E69200915F24 /* Build configuration list for PBXNativeTarget "OSCAWeatherUITests" */;
+			buildPhases = (
+				087307F727C3E69200915F24 /* Sources */,
+				087307F827C3E69200915F24 /* Frameworks */,
+				087307F927C3E69200915F24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0873080127C3E69200915F24 /* PBXTargetDependency */,
+			);
+			name = OSCAWeatherUITests;
+			productName = OSCAWeatherUITests;
+			productReference = 087307FB27C3E69200915F24 /* OSCAWeatherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0873077527C3DE7C00915F24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					0873077D27C3DE7C00915F24 = {
+						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
+					};
+					087307FA27C3E69200915F24 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 0873077827C3DE7C00915F24 /* Build configuration list for PBXProject "OSCAWeatherUI" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				de,
+				Base,
+			);
+			mainGroup = 0873077427C3DE7C00915F24;
+			packageReferences = (
+				11D5EBAC2924BA21003E3C14 /* XCRemoteSwiftPackageReference "SwiftDate" */,
+			);
+			productRefGroup = 0873077F27C3DE7C00915F24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0873077D27C3DE7C00915F24 /* OSCAWeatherUI */,
+				087307FA27C3E69200915F24 /* OSCAWeatherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0873077C27C3DE7C00915F24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F77A03DE2A0BC64C007FFEFA /* OSCAWeatherStationWidgetClassicCellView.xib in Resources */,
+				087307A127C3E05D00915F24 /* Localizable.strings in Resources */,
+				089A662D2805B431005E4FB8 /* OSCAWeatherStationSelectionViewController.storyboard in Resources */,
+				087C75EF2837A71A0051EF22 /* Media.xcassets in Resources */,
+				F77A03D32A0BC1AD007FFEFA /* OSCAWeatherStationWidgetViewController.storyboard in Resources */,
+				087307A927C3E05D00915F24 /* OSCAWeatherStationViewController.storyboard in Resources */,
+				F77A03DF2A0BC64C007FFEFA /* OSCAWeatherStationWidgetExtendedCellView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		087307F927C3E69200915F24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7998FF828880DAF0063D547 /* API_Develop.plist in Resources */,
+				F7998FF728880DAF0063D547 /* API_Release.plist in Resources */,
+				11A5FD61287C3C040066ECFE /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0873077A27C3DE7C00915F24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F77A03DB2A0BC641007FFEFA /* OSCAWeatherStationWidgetClassicCellView.swift in Sources */,
+				F77A03D12A0BC18C007FFEFA /* OSCAWeatherStationWidgetViewController.swift in Sources */,
+				F77A03DA2A0BC641007FFEFA /* OSCAWeatherStationWidgetExtendedCellView.swift in Sources */,
+				087307A327C3E05D00915F24 /* OSCAWeatherStationViewModel.swift in Sources */,
+				087307A027C3E05D00915F24 /* OSCAWeatherUI.swift in Sources */,
+				087307AB27C3E05D00915F24 /* OSCAWeatherStationFlowCoordinator.swift in Sources */,
+				087307A227C3E05D00915F24 /* NSNumber.swift in Sources */,
+				F77A03CF2A0BC082007FFEFA /* OSCAWeatherStationWidgetViewModel.swift in Sources */,
+				F78E8D192A0BDC1E00A3E1DC /* OSCAWeatherWidgetFlowCoordinator.swift in Sources */,
+				1139F00928C9D8F30050FAD4 /* WeatherDI+DeeplinkHandler.swift in Sources */,
+				F796BA9528F0663200AD6138 /* OSCAWeatherStationSelectionFlowCoordinator.swift in Sources */,
+				F77A03D72A0BC2A5007FFEFA /* OSCAWeatherStationWidgetExtendedCellViewModel.swift in Sources */,
+				089A66332805B4C3005E4FB8 /* OSCAWeatherStationSelectionViewModel.swift in Sources */,
+				087307A727C3E05D00915F24 /* OSCAWeatherStationCollectionReusableView.swift in Sources */,
+				089A66302805B4B0005E4FB8 /* OSCAWeatherStationSelectionTableViewCell.swift in Sources */,
+				F77A03D62A0BC2A5007FFEFA /* OSCAWeatherStationWidgetClassicCellViewModel.swift in Sources */,
+				087307A627C3E05D00915F24 /* OSCAWeatherStationCollectionViewCell.swift in Sources */,
+				087307A527C3E05D00915F24 /* OSCAWeatherStationCollectionReusableViewModel.swift in Sources */,
+				0873079F27C3E05D00915F24 /* OSCAWeatherUIDIContainer.swift in Sources */,
+				087307A427C3E05D00915F24 /* OSCAWeatherStationCollectionCellViewModel.swift in Sources */,
+				1139F00B28C9D9060050FAD4 /* WeatherStationFlow+OSCADeeplinkHandeble.swift in Sources */,
+				087307A827C3E05D00915F24 /* OSCAWeatherStationViewController.swift in Sources */,
+				089A66312805B4B0005E4FB8 /* OSCAWeatherStationSelectionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		087307F727C3E69200915F24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0873080527C3E6C200915F24 /* OSCAWeatherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0873080127C3E69200915F24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 0873077D27C3DE7C00915F24 /* OSCAWeatherUI */;
+			targetProxy = 0873080027C3E69200915F24 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0873078B27C3E05D00915F24 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0873078C27C3E05D00915F24 /* de */,
+				0873078D27C3E05D00915F24 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		11A5FD5F287C3C040066ECFE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11A5FD60287C3C040066ECFE /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0873078327C3DE7C00915F24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D0E0BE287D44A40094C026 /* Development.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0873078427C3DE7C00915F24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D0E0BD287D44A40094C026 /* Production.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0873078627C3DE7C00915F24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D0E0BE287D44A40094C026 /* Development.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OSCAWeatherUI/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = de.osca.weather.ui;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0873078727C3DE7C00915F24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D0E0BD287D44A40094C026 /* Production.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OSCAWeatherUI/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = de.osca.weather.ui;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0873080327C3E69200915F24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D0E0BE287D44A40094C026 /* Development.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OSCAWeatherUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = de.osca.weather.ui.OSCAWeatherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0873080427C3E69200915F24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D0E0BD287D44A40094C026 /* Production.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20240321.1;
+				DEVELOPMENT_TEAM = RSJ53UGKPZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OSCAWeatherUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = de.osca.weather.ui.OSCAWeatherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0873077827C3DE7C00915F24 /* Build configuration list for PBXProject "OSCAWeatherUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0873078327C3DE7C00915F24 /* Debug */,
+				0873078427C3DE7C00915F24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0873078527C3DE7C00915F24 /* Build configuration list for PBXNativeTarget "OSCAWeatherUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0873078627C3DE7C00915F24 /* Debug */,
+				0873078727C3DE7C00915F24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0873080227C3E69200915F24 /* Build configuration list for PBXNativeTarget "OSCAWeatherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0873080327C3E69200915F24 /* Debug */,
+				0873080427C3E69200915F24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		11D5EBAC2924BA21003E3C14 /* XCRemoteSwiftPackageReference "SwiftDate" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/SwiftDate.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1123F0142924C6FD003AFF42 /* SwiftDate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11D5EBAC2924BA21003E3C14 /* XCRemoteSwiftPackageReference "SwiftDate" */;
+			productName = SwiftDate;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0873077527C3DE7C00915F24 /* Project object */;
+}

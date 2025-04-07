@@ -1,0 +1,56 @@
+/* 
+  Localizable.strings
+  OSCAWeatherUI
+
+  Created by Ömer Kurutay on 03.02.22.
+  
+*/
+
+// MARK: Weather Station
+
+// The clock label text.
+"weather_clock" = "o'clock";
+// The day of the date for today's weather station data.
+"weather_today" = "Today";
+// The day of the date for yesterday's weather station data.
+"weather_yesterday" = "Yesterday";
+
+// The cardinal directions
+"weaher_cardinal_direction_n" = "N";
+"weaher_cardinal_direction_nne" = "NNE";
+"weaher_cardinal_direction_ne" = "NE";
+"weaher_cardinal_direction_ene" = "ENE";
+
+"weaher_cardinal_direction_e" = "E";
+"weaher_cardinal_direction_ese" = "ESE";
+"weaher_cardinal_direction_se" = "SE";
+"weaher_cardinal_direction_sse" = "SSE";
+
+"weaher_cardinal_direction_s" = "S";
+"weaher_cardinal_direction_ssw" = "SSW";
+"weaher_cardinal_direction_sw" = "SW";
+"weaher_cardinal_direction_wsw" = "WSW";
+
+"weaher_cardinal_direction_w" = "W";
+"weaher_cardinal_direction_wnw" = "WNW";
+"weaher_cardinal_direction_nw" = "NW";
+"weaher_cardinal_direction_nnw" = "NNW";
+
+// The for detailed weather information
+"weaher_title_details" = "DETAILS";
+
+// MARK: Weather Station Widget
+
+// The widget title
+"weaher_station_widget_title" = "";
+
+// MARK: Weather Station Selection
+
+// The screen title
+"weaher_selection_screen_title" = "Station selection";
+// Placeholder for searchbar
+"weaher_search_placeholder" = "Search for weather station";
+// The alert title for an error
+"weaher_alert_title_error" = "Error";
+// The alert action title to confirm
+"weaher_alert_title_confirm" = "OK";
